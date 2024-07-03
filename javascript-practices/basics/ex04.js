@@ -10,7 +10,7 @@
 4. ES6 이후(ES2015 ~ ES2024)
 
 */
-
+A
 var i = 20;
 var f = function() {
     var i = 10;
@@ -28,7 +28,7 @@ console.log("=== var 키워드는 함수 블록에서만 범위를 만든다.");
 if(90 + 10 === 100) {
     var k = 10;
 }
-
+// helosdfsdfsdf
 console.log(k);
 
 // console.log(x); // not defined error
