@@ -23,7 +23,7 @@ var f = function() {
 f();
 console.log(i);
 console.log(j);
-
+// asdfsadf
 console.log("=== var 키워드는 함수 블록에서만 범위를 만든다.");
 if(90 + 10 === 100) {
     var k = 10;
