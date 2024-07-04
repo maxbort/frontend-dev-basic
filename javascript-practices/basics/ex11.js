@@ -73,5 +73,5 @@ console.log(a3);
 console.log("=== insertAt() === ");
 
 var a4 = [0,1,3,4,5];
-a4.splice(2,0,2);
+a4.splice(2,0,2); // insertAt(2, 2);
 console.log(a4);
