@@ -3,6 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+window.addEventListener('load',function(){
+	document
+		.getElementById("form-login")
+		.addEveneListener('submit', function(event){
+			event.preventDefault();
+		
+		var email = document.getElementById("input-email").value;
+		if(email ===''){
+			alert("이메일 비어있음");
+			return;
+		} 
+		var password = document.getElementById("input-password").value;
+		if(password ===''){
+			alert("비밀번호 비어있음");
+			return;
+		}
+		
+		this.submit();
+		
+		return true;
+	});
+});
+</script>
 </head>
 <body>
 	<h1>DOM(Document Object Model)</h1>
