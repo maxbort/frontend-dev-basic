@@ -24,7 +24,6 @@ var f2 = function() {
     var inner = function() {
         console.log(s);
     }
-
     return inner;
 }
 

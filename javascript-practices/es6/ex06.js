@@ -82,3 +82,32 @@ let temp = x;
 x = y;
 y = temp;
 console.log(x, y);
+
+[y,x] = [x,y];
+console.log(x, y);
+
+//ex10 - ... array : array spread operator
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [firstColor, secondColor, ...otherColors] = colors;
+console.log(firstColor, secondColor, otherColors);
+
+
+// 가변 파라미터 함수에 ...[]을 사용할 수 있다.
+const printColor = function(){
+    Array.from(arguments).forEach((e) => console.log(e));
+}
+
+// printColor(colors[0], colors[1], colors[2], colors[3],colors[4],colors[5],colors[6]);
+printColor(...colors);
+
+//
+const printColor2 = function(...colors){
+    console.log(colors);
+}
+
+// ex 10-02: ... 를 함수의 파라미터 이름으로 사용하기: arguments 대용으로 사용 가능
+const printcolor2 = (...colors) => {
+    console.log(colors);
+}
+
+printColor2('red' ,'orange', 'yellow');
