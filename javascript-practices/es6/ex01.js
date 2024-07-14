@@ -11,6 +11,7 @@ try{
 
     console.log(i);
     console.log(j);
+    
 } catch(e) {
     console.error('error:' + e);
 }

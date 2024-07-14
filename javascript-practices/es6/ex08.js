@@ -30,7 +30,7 @@ rect1.draw();
 rect2.draw();
 
 /**
- * cf: 생성자 함수(protype 기반)
+ * cf: 생성자 함수(prototype 기반)
  */
 
 const Circle = function(x, y, r) {
@@ -77,3 +77,4 @@ class RectTriangle extends Shape {
 
 const shape1 = new RectTriangle(10,10,'blue', 'gray');
 shape1.draw();
+
