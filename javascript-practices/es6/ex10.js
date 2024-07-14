@@ -1,9 +1,9 @@
-// Parenthesis function & template literal
+// Parenthesis-less function & template literal
 
-div = function(s, ...v){
+div = function(s, ...v) {
     console.log(s, v);
     return function() {
-        return <div style={{}}></div>
+        return <div style={{}}></div>;
     }
 }
 
